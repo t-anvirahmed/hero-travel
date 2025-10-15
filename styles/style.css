@@ -19,6 +19,15 @@ body {
 .orange-text {
     color: #FF5400;
 }
+
+.primary-btn {
+    border: none;
+    background: #FF5400;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 14px 35px;
+}
+
 /* header section styles */
 
 /* nav section styles */
@@ -41,10 +50,6 @@ body {
     color: #131318;
 }
 
-.orange-text {
-    color: #FF5400;
-}
-
 .nav-links {
     display: flex;
     gap: 35px;
@@ -55,4 +60,72 @@ body {
     color: #131318;
 }
 
+/* banner section styles */
+.banner-container {
+    background: linear-gradient(180deg, rgb(50, 50, 57) 0%, rgba(37, 37, 45, 0) 100%), url('../images/Group\ 13\ \(1\)\ \(1\).png');    
+    background-size: cover;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 106px 185px;
+}
+
+.banner-content h3 {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.banner-content p {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.banner-content form {
+    background: rgb(255, 255, 255, 0.3);
+    /* border: 20px solid rgb(255, 255, 255, 0.3); */
+    border-radius: 8px;
+    width: 800px;
+    height: 84px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner-content form input, select{
+    width: 174px;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 35px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: rgb(19, 19, 24, 0.5);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.banner-content form select option {
+    
+}
+
+.banner-content form .primary-btn {
+    width: 174px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
