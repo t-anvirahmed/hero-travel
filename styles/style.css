@@ -1,6 +1,16 @@
-/* universal styles */
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* variable styles */
+:root{
+    --primary-color: #FF5400;
+    --heading-color:#131318;
+    --paragraphs-color: rgba(19, 19, 24, 0.70);
+    --form-input-color: rgba(19, 19, 24, 0.30);
+    --card-paragraph-color: #5A5A5D;
+}
+
+/* shared styles */
 * {
     padding: 0;
     margin: 0;
@@ -17,12 +27,12 @@ body {
 }
 
 .orange-text {
-    color: #FF5400;
+    color: var(--primary-color);
 }
 
 .primary-btn {
     border: none;
-    background: #FF5400;
+    background: var(--primary-color);
     color: #FFFFFF;
     border-radius: 8px;
     padding: 14px 35px;
@@ -47,17 +57,17 @@ body {
 .nav-logo h3 {
     font-size: 2.25rem;
     font-weight: 800;
-    color: #131318;
+    color: var(--heading-color);
 }
 
 .nav-links {
     display: flex;
-    gap: 35px;
+    gap: 50px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #131318;
+    color: var(--heading-color);
 }
 
 /* banner section styles */
@@ -74,6 +84,7 @@ body {
 }
 
 .banner-content {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,18 +97,18 @@ body {
     font-weight: 800;
 }
 
-.banner-content p {
+.banner-content > p {
+    max-width: 676px;
     margin-top: 24px;
     margin-bottom: 48px;
 }
 
 .banner-content form {
     background: rgb(255, 255, 255, 0.3);
-    /* border: 20px solid rgb(255, 255, 255, 0.3); */
     border-radius: 8px;
-    width: 800px;
-    height: 84px;
     display: flex;
+    gap: 16px;
+    padding: 16px;
     justify-content: space-evenly;
 }
 
@@ -105,22 +116,27 @@ body {
     width: 174px;
     border: none;
     border-radius: 8px;
-    padding: 14px 35px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    color: rgb(19, 19, 24, 0.5);
+    padding: 14px 35px 14px 12px;
+    color: var(--form-input-color);
     font-weight: 400;
     font-size: 1rem;
 }
 
-.banner-content form select option {
-    
+.banner-content form input::placeholder {
+    color: var(--form-input-color);
+    opacity: 1;
+}
+
+.banner-content form select {
+    appearance: none;
+    background-image: url('/images/angle-down-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: right 12px center;
 }
 
 .banner-content form .primary-btn {
     width: 174px;
-    margin-top: 16px;
-    margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,4 +144,3 @@ body {
     font-size: 1rem;
     font-weight: 700;
 }
-
