@@ -44,4 +44,26 @@
     .banner-content form .primary-btn {
         width: 100%;
     }
+    /* popular tours section */
+    .popular-tours {
+        flex-direction: column;
+        padding: 10px;
+        gap: 24px;
+        /* justify-content: center; */
+    }
+    .popular-tours-content {
+        gap: 16px;
+    }
+    .popular-tours-content, .popular-tours-img {
+        width: 100%;
+    }
+    .popular-tours-content h3 {
+        font-size: 1.25rem;
+    }
+    .popular-tours-content p, ul>li {
+        font-size: 0.9rem;
+    }
+    .popular-tours-img img {
+        max-width: 100%;
+    }
 }

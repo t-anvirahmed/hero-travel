@@ -36,8 +36,23 @@ body {
     color: #FFFFFF;
     border-radius: 8px;
     padding: 14px 35px;
+    width: 174px;
+    height: 52px;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--heading-color);
+}
+
+.section-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraphs-color);
+}
 /* header section styles */
 
 /* nav section styles */
@@ -72,7 +87,7 @@ body {
 
 /* banner section styles */
 .banner-container {
-    background: linear-gradient(180deg, rgb(50, 50, 57) 0%, rgba(37, 37, 45, 0) 40%), url('../images/Group\ 13\ \(1\)\ \(1\).png');
+    background: linear-gradient(180deg, rgb(50, 50, 57) 0%, rgba(37, 37, 45, 0) 80%), url('../images/Group\ 13\ \(1\)\ \(1\).png');
     background-size: cover;
     height: 500px;
     margin-top: 50px;
@@ -136,11 +151,28 @@ body {
 }
 
 .banner-content form .primary-btn {
-    width: 174px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 1rem;
-    font-weight: 700;
+}
+
+/* popular tours section */
+.popular-tours {
+    max-height: 550px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.popular-tours-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.popular-tours-content ul {
+    padding-left: 1.25rem;
+    list-style-position: outside;
 }
