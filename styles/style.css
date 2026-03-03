@@ -179,10 +179,6 @@ body {
 }
 
 /* destinations section */
-.destinations {
-    
-}
-
 .destinations .destinations-content {
     display: flex;
     flex-direction: column;
@@ -190,7 +186,7 @@ body {
     text-align: center;
 }
 
-.destinations .destinations-content h3, p {
+.destinations .destinations-content h3, .destinations .destinations-content p {
     margin-bottom: 24px;
 }
 
