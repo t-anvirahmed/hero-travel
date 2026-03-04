@@ -53,6 +53,19 @@ body {
   font-weight: 400;
   color: var(--paragraphs-color);
 }
+
+.bg-orange {
+  background: rgba(251, 181, 99, 0.2);
+}
+
+.bg-blue {
+  background: rgba(41, 206, 246, 0.2);
+}
+
+.bg-red {
+  background: rgba(233, 68, 68, 0.2);
+}
+
 /* header section styles */
 
 /* nav section styles */
@@ -219,4 +232,48 @@ select {
 
 .destination-card-text h3 {
   color: #ffffff;
+}
+
+/* choose us section */
+.choose-content {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.choose-content p {
+  width: 50%;
+  margin-top: 24px;
+}
+
+.choose-content-cards {
+  margin-top: 48px;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose-card {
+  padding: 32px 55px;
+  border-radius: 10px;
+}
+
+.choose-card i {
+  font-size: 4rem;
+}
+
+.choose-card h3,
+.choose-card p {
+  margin-top: 20px;
+}
+
+.cards-row-two {
+  width: 50%;
+  margin: 24px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
