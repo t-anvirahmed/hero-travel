@@ -224,8 +224,7 @@ select {
   text-align: center;
 }
 
-.destination-card-text,
-.video-img-text {
+.destination-card-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -307,8 +306,9 @@ select {
 }
 
 .video-content ul li {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   padding-right: 24px;
+  line-height: 1.6;
 }
 
 .video-img {
@@ -317,6 +317,11 @@ select {
 }
 
 .video-img-text {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #ffffff;
 }
