@@ -40,6 +40,7 @@ body {
   height: 52px;
   font-size: 1rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-title {
@@ -223,7 +224,8 @@ select {
   text-align: center;
 }
 
-.destination-card-text {
+.destination-card-text,
+.video-img-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -276,4 +278,45 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* video section */
+.video-container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-content h3 {
+  padding-right: 100px;
+}
+
+.video-content p {
+  margin-top: 24px;
+}
+
+.video-content p,
+.video-content ul {
+  padding-right: 20px;
+}
+.video-content ul {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  padding-left: 16px;
+}
+
+.video-content ul li {
+  margin-bottom: 16px;
+  padding-right: 24px;
+}
+
+.video-img {
+  position: relative;
+  width: 50%;
+}
+
+.video-img-text {
+  text-align: center;
+  color: #ffffff;
 }
