@@ -325,3 +325,60 @@ select {
   text-align: center;
   color: #ffffff;
 }
+
+/* newsletter section */
+.newsletter-container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter-form {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.newsletter-form .newsletter-heading {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.newsletter-form .newsletter-text {
+  color: var(--card-paragraph-color);
+  margin-bottom: 24px;
+}
+
+.newsletter-form form input {
+  width: 100%;
+  margin-top: 16px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter-form button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.newsletter-img-text {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 10px;
+  width: 324px;
+  border-radius: 10px;
+  /* transform: rotate(-45deg) translateY(100px); */
+}
+
+.newsletter-img-text h3,
+.newsletter-img-text h4 {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.newsletter-img-text h4 {
+  font-size: 2rem;
+}
