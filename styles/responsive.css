@@ -3,7 +3,8 @@
   .nav-container {
     margin: 20px;
   }
-  .nav-logo h3 {
+  .nav-logo h3,
+  .footer-logo h3 {
     font-size: 1.25rem;
   }
   .nav-links {
@@ -175,5 +176,18 @@
   }
   .newsletter-img-text {
     transform: rotate(-30deg) translateX(180px) translateY(-70px) scale(0.6);
+  }
+  /* footer section styles */
+  footer {
+    margin-top: 20px;
+  }
+  .footer-container {
+    margin: 32px 44px;
+  }
+  .footer-logo {
+    margin-top: 44px;
+  }
+  .footer-text {
+    max-width: 100%;
   }
 }
